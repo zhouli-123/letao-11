@@ -1,0 +1,13 @@
+.adapterMixin(@index) when (@index>0){
+  //遍历用for循环，但是less无循环语法
+
+  //可以使用函数的迭代（死循环）解决办法：根据数组的长度去停止当前的循环，在less里面可以通过序列号来判断
+@media (min-width: extract(@adapterDeviceList,@index)) {
+  html {
+    font-size: @baseFontsize/@psdWidth* extract(@adapterDeviceList,@index)
+  }
+}
+  .adapterMixin(@index - 1)
+}
+
+

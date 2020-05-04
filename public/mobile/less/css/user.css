@@ -1,0 +1,14 @@
+.p20{
+    margin: 20px auto;
+    width: 95%;
+}
+.p20 a{
+    width: 100%;
+}
+.form_box{
+    margin-top: 70px;
+}
+.btn_register{
+    width: 100%;
+    display: inline-block;
+}
